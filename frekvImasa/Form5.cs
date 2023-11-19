@@ -35,7 +35,7 @@ namespace frekvImasa
 
                 double masa = volumen * gustoca1;
 
-                Masa.Text = "Masa je: " + masa.ToString();
+                Masa.Text = "Masa je: " + masa.ToString("F3") + " kg";
             }
             catch (FormatException)
             {
