@@ -15,6 +15,7 @@ namespace frekvImasa
         public Form3()
         {
             InitializeComponent();
+            frekvencija.placeHolderText = "frekvencija u Hz";
         }
 
         private void izracun_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace frekvImasa
                 }
 
                 double Period1 = 1 / frekv;
-                period.Text = "Period je: " + Period1.ToString();
+                period.Text = "Period je: " + Period1.ToString("F3") + " s";
             }
             catch (FormatException)
             {
